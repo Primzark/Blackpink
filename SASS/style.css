@@ -19,6 +19,7 @@ body {
   align-items: center;
   background-color: #000;
   border-bottom: solid #282626;
+  font-family: "Roboto", sans-serif;
 }
 .top-bar .top-bar-left h2 {
   font-size: 1.8rem;
@@ -85,11 +86,12 @@ body {
   color: #fff;
 }
 .container .profile-header .header-content .account-info button {
-  padding: 0.375rem 0.75rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
   background-color: #949595;
   color: #fff;
   border: none;
-  border-radius: 0.1875rem;
+  border-radius: 0.67em;
   cursor: pointer;
 }
 .container .profile-header .header-content .account-info button:hover {
@@ -116,14 +118,13 @@ body {
 .main-section {
   width: 70%;
   margin: 0 auto;
-  padding: 2rem 1rem;
   background-color: #000;
   text-align: center;
 }
 .main-section .tab-bar {
   display: flex;
-  justify-content: space-around;
-  border-bottom: solid #282626;
+  justify-content: center;
+  gap: 0.5rem;
   margin-bottom: 1rem;
 }
 .main-section .tab-bar .tab {
@@ -136,7 +137,7 @@ body {
 .main-section .tab-bar .tab.active {
   color: #fff;
   font-weight: bold;
-  border-bottom: 0.125rem solid #fff;
+  border-top: 0.125rem solid #fff;
 }
 .main-section .tab-bar .tab:hover {
   color: #ccc;
@@ -149,10 +150,20 @@ body {
 .main-section .post-grid .post-thumbnail {
   background-color: #222;
   border-radius: 0.5rem;
-  padding: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  color: #fff;
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  aspect-ratio: 1/1;
+}
+.main-section .post-grid img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem; /* Optional: matches your existing styling */
 }/*# sourceMappingURL=style.css.map */
