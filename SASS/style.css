@@ -6,7 +6,6 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0 auto;
   color: #fff;
 }
@@ -19,10 +18,10 @@ body {
   align-items: center;
   background-color: #000;
   border-bottom: solid #282626;
-  font-family: "Roboto", sans-serif;
 }
 .top-bar .top-bar-left h2 {
   font-size: 1.8rem;
+  font-family: "Dancing script", cursive;
   font-weight: bold;
   color: #fff;
   margin-left: 13rem;
@@ -166,4 +165,19 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem; /* Optional: matches your existing styling */
+}
+
+@media (max-width: 768px) {
+  .profile-picture img {
+    width: 3rem;
+    height: 6rem;
+  }
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .button {
+    position: absolute;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */
